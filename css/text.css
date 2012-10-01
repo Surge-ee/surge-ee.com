@@ -1,0 +1,129 @@
+/*=======================================================================
+
+	❤❤❤ Gumby by Digital Surgeons. ❤❤❤
+
+	*** This is where you should keep all of your TEXT styles ***
+
+ ========================================================================*/
+ @font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('fonts/ProximaNova-Reg-webfont.eot');
+    src: url('fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-Reg-webfont.woff') format('woff'),
+         url('fonts/ProximaNova-Reg-webfont.ttf') format('truetype'),
+         url('fonts/ProximaNova-Reg-webfont.svg#ProximaNovaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('fonts/ProximaNova-Bold-webfont.eot');
+    src: url('fonts/ProximaNova-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-Bold-webfont.woff') format('woff'),
+         url('fonts/ProximaNova-Bold-webfont.ttf') format('truetype'),
+         url('fonts/ProximaNova-Bold-webfont.svg#ProximaNovaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('fonts/ProximaNova-Sbold-webfont.eot');
+    src: url('fonts/ProximaNova-Sbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-Sbold-webfont.woff') format('woff'),
+         url('fonts/ProximaNova-Sbold-webfont.ttf') format('truetype'),
+         url('fonts/ProximaNova-Sbold-webfont.svg#ProximaNovaSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a {
+     color: #424247;
+}
+
+a:hover {
+    color: #fb8e00;
+}
+
+.nav,
+.nav a {
+    font-family: ProximaNovaRegular;
+    font-size: 17px;
+}
+
+h2 {
+    font-family: ProximaNovaBold;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.panel figure a {
+    font-family: ProximaNovaSemibold;
+    font-size: 34px;
+    text-shadow: 1px 1px 1px #FFF;
+    line-height: 188px;
+}
+
+.panel figure a:hover {
+    background: rgba(255,153,51,.61);
+    color: #FFF;
+    text-shadow: none;
+}
+
+.panel p {
+    color: #2e2d2b;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ==|== media queries ======================================================
+    PLACEHOLDER Media Queries for Responsive Design.
+    These override the primary ('mobile first') styles
+    Modify as content requires.
+    ========================================================================== */
+
+ @media only screen and (min-width: 480px) {
+   /* Style adjustments for viewports 480px and over go here */
+
+ }
+
+ @media only screen and (min-width: 768px) {
+   /* Style adjustments for viewports 768px and over go here */
+
+ }
