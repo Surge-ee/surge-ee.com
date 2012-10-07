@@ -57,13 +57,27 @@
   <div class="container">
     <!-- header -->
     <header class="row">
-      <div class="five columns push_eleven">
+      <div class="five columns push_eleven navbar">
         <ul class="nav clearfix">
           <li><a href="#">About Us</a></li>
           <li>|</li>
-          <li><a href="#">Documentation</a></li>
+          <li><a href="#" onclick="return false;">Documentation</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="https://github.com/dsurgeons/SurgerEE/wiki">SurgerEE</a></li>
+                <li><a href="https://github.com/Surge-ee/Surge-E-O/wiki">Surge-EO</a></li>
+              </ul>
+            </div>
+          </li>
           <li>|</li>
-          <li><a href="#">Support</a></li>
+          <li><a href="#" onclick="return false;">Support</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="https://github.com/dsurgeons/SurgerEE/issues">SurgerEE</a></li>
+                <li><a href="https://github.com/Surge-ee/Surge-E-O/issues">Surge-EO</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
     </header>
@@ -84,7 +98,7 @@
         <dl>
           <dt>
             <figure>
-              <a href="#">SurgerEE</a>
+              <a href="https://github.com/dsurgeons/SurgerEE" title="SurgerEE ExpressionEngine add-on">SurgerEE</a>
             </figure>
           </dt>
           <dd>
@@ -96,7 +110,7 @@
         <dl>
           <dt>
             <figure>
-              <a href="#">SurgeEO</a>
+              <a href="https://github.com/Surge-ee/Surge-E-O" title="SurgeEO ExpressionEngine SEO module">SurgeEO</a>
             </figure>
           </dt>
           <dd>
@@ -109,7 +123,7 @@
           <dt>
             <figure>
 
-              <a href="#">&lt;Coming&gt;</a>
+              <a href="#" onclick="return false;">&lt;Coming&gt;</a>
             </figure>
           </dt>
           <dd>
@@ -120,14 +134,32 @@
     </section>
 
     <section class="row">
-      <div class="twelve columns">
+      <div class="twelve columns push_two" id="get_in_touch">
         <hr />
-        <p>Looking for a Custom Add-on you have in mind? Get in touch:</p>
+        <p>Looking for a Custom Add-on you have in mind? <em>Get in touch.</em></p>
+        <p><a href="https://twitter.com/surgeEEapps" class="twitter-follow-button" data-show-count="false">Follow @surgeEEapps</a></p>
       </div>
     </section>
 
-
   </div> <!--! end of #container -->
+
+  <div class="container" id="footer">
+    <footer class="row">
+      <div class="five columns" id="nav_sm">
+        <ul class="nav clearfix">
+          <li><a href="#">About Us</a></li>
+          <li>|</li>
+          <li><a href="#">Documentation</a></li>
+          <li>|</li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="five columns push_six" id="logo_sm">
+        <p><img src="img/img_logo_sm.png" alt="Surge-ee EE apps" /></p>
+        <p>Copyright 2012. Surge:EE all rights reserved.</p>
+      </div>
+    </footer>
+  </div>
 
   <!-- JavaScript at the bottom for fast page loading -->
 
