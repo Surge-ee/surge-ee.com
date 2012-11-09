@@ -57,11 +57,10 @@
   <div class="container">
     <!-- header -->
     <header class="row">
-      <div class="five columns push_eleven navbar">
-        <ul class="nav clearfix">
+      <div class="navbar">
+        <ul class="nav">
           <li><a href="#">About Us</a></li>
-          <li>|</li>
-          <li><a href="#" onclick="return false;">Documentation</a>
+          <li><span>Documentation</span>
             <div class="dropdown">
               <ul>
                 <li><a href="https://github.com/dsurgeons/SurgerEE/wiki">SurgerEE</a></li>
@@ -69,8 +68,7 @@
               </ul>
             </div>
           </li>
-          <li>|</li>
-          <li><a href="#" onclick="return false;">Support</a>
+          <li><span>Support</span>
             <div class="dropdown">
               <ul>
                 <li><a href="https://github.com/dsurgeons/SurgerEE/issues">SurgerEE</a></li>
@@ -84,59 +82,45 @@
 
     <!-- branding -->
     <section class="row">
-      <div class="four columns push_six" id="logo">
+      <div class="six columns centered" id="logo">
         <h1><a href="/" class="ir" title="Professional ExpressionEngine Add-ons">Surge-EE</a></h1>
       </div>
     </section>
 
     <!-- panels -->
     <section class="row">
-      <div class="sixteen columns" id="tagline">
-        <h2>We make things to help designers and developers build ExpressionEngine sites faster.</h2>
-      </div>
-      <div class="four columns push_two panel" id="surgeree">
-        <dl>
-          <dt>
+      <article class="row">
+        <h2 id="tagline">We make things to help designers and developers build ExpressionEngine sites faster.</h2>
+        <ul class="panels">
+          <li class="panel" id="surgeree">
             <figure>
               <a href="https://github.com/dsurgeons/SurgerEE" title="SurgerEE ExpressionEngine add-on">SurgerEE</a>
+              <div></div>
             </figure>
-          </dt>
-          <dd>
             <p>Ever want to use php in your templates because of some glaringly missing functionality? SurgerEE is an ongoing collection of tags filling that gap and aiding with your template surgery.</p>
-          </dd>
-        </dl>
-      </div>
-      <div class="four columns panel" id="surgeo">
-        <dl>
-          <dt>
+          </li>
+          <li class="panel" id="surgeo">
             <figure>
               <a href="https://github.com/Surge-ee/Surge-E-O" title="SurgeEO ExpressionEngine SEO module">SurgeEO</a>
+              <div></div>
             </figure>
-          </dt>
-          <dd>
             <p>SurgeEO is our answer to a need for turn-key SEO contro. Put your SEO in motion in a few clicks. SurgeEO lets you manage your SEO meta data within just<br />a few clicks.</p>
-          </dd>
-        </dl>
-      </div>
-      <div class="four columns panel" id="nextgen">
-        <dl>
-          <dt>
+          </li>
+          <li class="panel" id="nextgen">
             <figure>
-
               <a href="#" onclick="return false;">&lt;Coming&gt;</a>
+              <div></div>
             </figure>
-          </dt>
-          <dd>
             <p>What’s next? We either know and aren’t telling or, are waiting for someone like you to tell us.</p>
-          </dd>
-        </dl>
-      </div>
+          </li>
+        </ul>
+      </article>
     </section>
 
     <section class="row">
       <div class="twelve columns push_two" id="get_in_touch">
         <hr />
-        <p>Looking for a Custom Add-on you have in mind? <em>Get in touch.</em></p>
+        <h3>Looking for a Custom Add-on you have in mind? <em>Get in touch.</em></h3>
         <p><a href="https://twitter.com/surgeEEapps" class="twitter-follow-button" data-show-count="false">Follow @surgeEEapps</a></p>
       </div>
     </section>
@@ -148,9 +132,7 @@
       <div class="five columns" id="nav_sm">
         <ul class="nav clearfix">
           <li><a href="#">About Us</a></li>
-          <li>|</li>
           <li><a href="#">Documentation</a></li>
-          <li>|</li>
           <li><a href="#">Support</a></li>
         </ul>
       </div>
