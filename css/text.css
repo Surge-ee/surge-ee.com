@@ -75,7 +75,7 @@ h2 {
     font-family: ProximaNovaSemibold;
     font-size: 39px;
     font-size: 3.9rem;
-    line-height: 42px;
+    line-height: 1.1;
     text-align: center;
 }
 
@@ -119,4 +119,24 @@ h3 em {
     text-align: right;
     font-size: 11px;
     margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 480px) {
+    /* Style adjustments for viewports 768px and over go here */
+
+    #tagline {
+        font-size: 3rem;
+    }
+
+    .panel p {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    #get_in_touch h3 {
+        line-height: 1.3;
+    }
+
+
 }

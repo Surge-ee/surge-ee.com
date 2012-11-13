@@ -105,7 +105,7 @@ hr {
 	text-align: center;
 	padding-top: 35%;
 
-	border: 15px solid #fff;
+	border: 13px solid #fff;
 	border-radius: 50%;
 	box-sizing: border-box;
 }
@@ -172,8 +172,20 @@ footer {
 @media only screen and (max-width: 480px) {
     /* Style adjustments for viewports 768px and over go here */
 
+    #logo {
+    	margin-bottom: 30px;
+    }
+
+    #logo h1 {
+    	margin: 0;
+    }
+
+    #tagline {
+    	margin-bottom: 30px;
+    }
+
     .panels {
-    	width: 80%;
+    	width: 90%;
     	margin: 0 auto;
     }
 
@@ -181,11 +193,51 @@ footer {
     	float: none;
     	width: 100%;
     	margin: 0;
+    	padding: 10px 0;
+    	overflow: hidden;
+    	display: table;
+    }
+
+    .panel > div {
+    	display: table-cell;
+    	width: 40%;
+    	vertical-align: middle;
+    }
+
+    .panel figure {
+    	margin: 0;
+		box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+    }
+
+	.panel figure a {
+		border: 6px solid #fff;
+	}
+
+    .panel p {
+    	width: 55%;
+    	padding-left: 5%;
+    	display: table-cell;
+    	vertical-align: middle;
+    }
+
+    #get_in_touch {
+    	padding-bottom: 0;
+    }
+
+    #get_in_touch h3 {
+    	margin: 0 0 5px 0;
+    	padding: 10px 20px;
     }
 
     footer {
+    	padding: 0 0 30px 0;
     	text-align: center;
     }
+
+	#nav_sm .nav {
+		margin: 10px 0 0 0;
+		padding: 15px 0;
+	}
 
     footer ul {
     	display: inline-block;
