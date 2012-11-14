@@ -169,11 +169,21 @@ footer {
 
 }
 
+@media only screen and (max-width: 767px) {
+    footer .nav {
+        display: inline-block;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     /* Style adjustments for viewports 768px and over go here */
 
+    body {
+        min-width: 300px;
+    }
+
     #logo {
-    	margin-bottom: 30px;
+    	margin-bottom: 25px;
     }
 
     #logo h1 {
@@ -211,6 +221,7 @@ footer {
 
 	.panel figure a {
 		border: 6px solid #fff;
+        padding-top: 40%;
 	}
 
     .panel p {

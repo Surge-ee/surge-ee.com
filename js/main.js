@@ -5,7 +5,7 @@ $(function() {
 	function fontResize() {
 		var	$pTxt = $('.panel a'),
 			pWidth = $pTxt.parent().width(),
-			newSize = pWidth / 70;
+			newSize = pWidth / 68;
 		$pTxt.css('font-size', newSize + 'rem');
 	}
 
