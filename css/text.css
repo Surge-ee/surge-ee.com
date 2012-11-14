@@ -75,7 +75,7 @@ h2 {
     font-family: ProximaNovaSemibold;
     font-size: 39px;
     font-size: 3.9rem;
-    line-height: 42px;
+    line-height: 1.1;
     text-align: center;
 }
 
@@ -120,3 +120,55 @@ h3 em {
     font-size: 11px;
     margin-bottom: 0;
 }
+
+@media only screen and (max-width: 767px) {
+    #footer .columns {
+        text-align: center !important;
+    }
+
+    #logo_sm, #logo_sm p {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    /* Style adjustments for viewports 768px and over go here */
+
+    #tagline {
+        font-size: 3rem;
+    }
+
+    .panel p {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    #get_in_touch h3 {
+        line-height: 1.3;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 320px) {
+    /* Style adjustments for viewports 768px and over go here */
+
+    #tagline {
+        font-size: 2.4rem;
+    }
+
+    .panel p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    #get_in_touch h3 {
+        line-height: 1.3;
+    }
+
+
+}
+
