@@ -6,7 +6,8 @@ $(function() {
 		var	$pTxt = $('.panel a'),
 			pWidth = $pTxt.parent().width(),
 			newSize = pWidth / 68;
-		$pTxt.css('font-size', newSize + 'em');
+			ieBleh	= pWidth / 80;
+		$pTxt.css('font-size', ieBleh + 'em');
 		$pTxt.css('font-size', newSize + 'rem');
 	}
 
