@@ -18,17 +18,29 @@ hr {
 	border-bottom: 1px dotted #999;
 }
 
-.nav {
+.navbar ul {
 	list-style: none;
 	margin: 12px 0 0 0;
 	padding: 0;
+	float: right;
+	width: auto;
 }
 
 .nav li {
 	float: left;
-	margin: 0 0 0 5px;
-	padding: 0;
+	margin: 0;
+	padding: 0 5px;
+	border-left: 1px solid #555;
 }
+
+.nav li li {
+	border: 0;
+}
+
+.nav li:first-child {
+	border: 0;
+}
+
 
 #nav_sm .nav {
 	margin-top: 30px;
@@ -37,11 +49,12 @@ hr {
 #logo {
 	margin-top: 22px;
 	margin-bottom: 48px;
+	text-align: center;
 }
 
 #logo a {
 	background-image: url(../img/logo.png);
-	display: block;
+	display: inline-block;
 	width: 220px;
 	height: 50px;
 }
@@ -50,41 +63,75 @@ hr {
 	margin-bottom: 60px;
 }
 
-#tagline h2 {
-    position: relative;
-    left: -6px;
-    width: 950px;
+.panels {
+	width: 74.4681%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.panels li {
+	float: left;
+	width: 31.33333%;
+	margin-left: 3%;
+}
+
+.panels li:first-child {
+	margin-left: 0;
 }
 
 .panel figure {
-	border: 15px solid #fff;
-	border-radius: 50%;
-	height: 188px;
-	overflow: hidden;
+	display: inline-block;
 	position: relative;
-	margin: 0 auto 28px auto;
-	width: 188px;
+	width: 100%;
+	margin: 0 auto;
+	background: url(../img/panel_surgeeo.jpg);
+	background-size: cover;
+	border-radius: 50%;
+	margin-bottom: 20px;
+    behavior: url(PIE.htc);
 }
 
-#surgeree figure,
-#surgeo figure {
-	background: url(../img/panel_surgeeo.jpg);
+.panel figure div {
+	margin-top: 100%;
 }
 
 .panel figure a {
-	background: none;
 	display: block;
-	width: 188px;
-	height: 188px;
-	border-radius: 50%;
 	position: absolute;
 	top: 0;
+	bottom: 0;
 	left: 0;
+	right: 0;
 	z-index: 5;
 	text-align: center;
+	padding-top: 35%;
+
+	border: 13px solid #fff;
+	border-radius: 50%;
+	box-sizing: border-box;
+    behavior: url(PIE.htc);
 }
 
-#footer {
+.panel figure a:hover {
+    background-color: rgba(255,144,0,.7);
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(230,130,0,1);
+}
+
+.panel .figure:last-child {
+	background: none;
+}
+
+#get_in_touch {
+	padding-bottom: 30px;
+}
+
+#get_in_touch h3 {
+	padding-top: 40px;
+}
+
+
+footer {
 	background: #dcdddd;
     border-top: 1px solid #c4c4c4;
     padding: 12px 0 50px 0;
@@ -109,14 +156,109 @@ hr {
 }
 
 
+@media only screen and (max-width: 900px) {
+    .panels {
+    	width: 80%;
+    }
+}
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 768px) {
     /* Style adjustments for viewports 480px and over go here */
+
+    .panels {
+    	width: 100%;
+    }
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 767px) {
+    footer .nav {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
     /* Style adjustments for viewports 768px and over go here */
+
+    body {
+        min-width: 300px;
+    }
+
+    #logo {
+    	margin-bottom: 25px;
+    }
+
+    #logo h1 {
+    	margin: 0;
+    }
+
+    #tagline {
+    	margin-bottom: 30px;
+    }
+
+    .panels {
+    	width: 90%;
+    	margin: 0 auto;
+    }
+
+    .panels li {
+    	float: none;
+    	width: 100%;
+    	margin: 0;
+    	padding: 10px 0;
+    	overflow: hidden;
+    	display: table;
+    }
+
+    .panel > div {
+    	display: table-cell;
+    	width: 40%;
+    	vertical-align: middle;
+    }
+
+    .panel figure {
+    	margin: 0;
+		box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+    }
+
+	.panel figure a {
+		border: 6px solid #fff;
+        padding-top: 40%;
+	}
+
+    .panel p {
+    	width: 55%;
+    	padding-left: 5%;
+    	display: table-cell;
+    	vertical-align: middle;
+    }
+
+    #get_in_touch {
+    	padding-bottom: 0;
+    }
+
+    #get_in_touch h3 {
+    	margin: 0 0 5px 0;
+    	padding: 10px 20px;
+    }
+
+    footer {
+    	padding: 0 0 30px 0;
+    	text-align: center;
+    }
+
+	#nav_sm .nav {
+		margin: 10px 0 0 0;
+		padding: 15px 0;
+	}
+
+    footer ul {
+    	display: inline-block;
+    }
+
+    footer #logo_sm p {
+    	text-align: center;
+    }
 
 }
 

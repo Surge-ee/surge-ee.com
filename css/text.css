@@ -43,16 +43,27 @@
 
 a {
      color: #424247;
+    -webkit-transition: all .25s cubic-bezier(.10, .10, .25, .90);
+    -moz-transition: all .25s cubic-bezier(.10, .10, .25, .90);
+    -ms-transition: all .25s cubic-bezier(.10, .10, .25, .90);
+    -o-transition: all .25s cubic-bezier(.10, .10, .25, .90);
+    transition: all .25s cubic-bezier(.10, .10, .25, .90);
 }
 
-a:hover {
+a:hover, .nav span:hover {
     color: #fb8e00;
+    -webkit-transition: all .25s cubic-bezier(.10, .10, .25, .90);
+    -moz-transition: all .25s cubic-bezier(.10, .10, .25, .90);
+    -ms-transition: all .25s cubic-bezier(.10, .10, .25, .90);
+    -o-transition: all .25s cubic-bezier(.10, .10, .25, .90);
+    transition: all .25s cubic-bezier(.10, .10, .25, .90);
 }
 
 .nav,
 .nav a {
     font-family: ProximaNovaRegular;
     font-size: 17px;
+    line-height: 1;
 }
 
 #nav_sm .nav a {
@@ -60,24 +71,35 @@ a:hover {
 }
 
 h2 {
-    font-family: ProximaNovaBold;
-    font-size: 42px;
-    font-size: 4.2rem;
-    line-height: 42px;
+    color: #424247;
+    font-family: ProximaNovaSemibold;
+    font-size: 39px;
+    font-size: 3.9rem;
+    line-height: 1.1;
     text-align: center;
+}
+
+h3 {
+    color: #424247;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-family: ProximaNovaRegular;
+}
+
+h3 em {
+    font-family: ProximaNovaSemibold;
+    white-space: nowrap;
 }
 
 .panel figure a {
     font-family: ProximaNovaSemibold;
-    font-size: 34px;
+    font-size: 0;
     text-shadow: 1px 1px 1px #FFF;
-    line-height: 188px;
+    line-height: 1;
 }
 
 .panel figure a:hover {
-    background: rgba(255,153,51,.61);
     color: #FFF;
-    text-shadow: none;
 }
 
 .panel p {
@@ -98,3 +120,55 @@ h2 {
     font-size: 11px;
     margin-bottom: 0;
 }
+
+@media only screen and (max-width: 767px) {
+    #footer .columns {
+        text-align: center !important;
+    }
+
+    #logo_sm, #logo_sm p {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    /* Style adjustments for viewports 768px and over go here */
+
+    #tagline {
+        font-size: 3rem;
+    }
+
+    .panel p {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    #get_in_touch h3 {
+        line-height: 1.3;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 320px) {
+    /* Style adjustments for viewports 768px and over go here */
+
+    #tagline {
+        font-size: 2.4rem;
+    }
+
+    .panel p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    #get_in_touch h3 {
+        line-height: 1.3;
+    }
+
+
+}
+

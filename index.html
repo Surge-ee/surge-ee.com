@@ -22,17 +22,17 @@
 
   <!--Facebook Metadata /-->
   <meta property="fb:page_id" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:description" content=""/>
-  <meta property="og:title" content=""/>
+  <meta property="og:image" content="/share.jpg" />
+  <meta property="og:description" content="Professional, easy ExpressionEngine add-ons"/>
+  <meta property="og:title" content="Surge-EE : ExpressionEngine add-ons"/>
 
   <!--Google+ Metadata /-->
-  <meta itemprop="name" content="">
-  <meta itemprop="description" content="">
-  <meta itemprop="image" content="">
+  <meta itemprop="name" content="Surge-EE : ExpressionEngine add-ons">
+  <meta itemprop="description" content="Professional, easy ExpressionEngine add-ons">
+  <meta itemprop="image" content="/share.jpg">
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
@@ -57,24 +57,24 @@
   <div class="container">
     <!-- header -->
     <header class="row">
-      <div class="five columns push_eleven navbar">
-        <ul class="nav clearfix">
-          <li><a href="#">About Us</a></li>
-          <li>|</li>
-          <li><a href="#" onclick="return false;">Documentation</a>
+      <div class="navbar">
+        <ul class="nav">
+          <li><a href="http://www.digitalsurgeons.com/expressionengine/" target="_blank" title="Expression Engine Development">About Us</a></li>
+          <li><span>Documentation</span>
             <div class="dropdown">
               <ul>
-                <li><a href="https://github.com/dsurgeons/SurgerEE/wiki">SurgerEE</a></li>
-                <li><a href="https://github.com/Surge-ee/Surge-E-O/wiki">Surge-EO</a></li>
+                <li><a href="https://github.com/dsurgeons/SurgerEE/wiki" target="_blank">SurgerEE</a></li>
+                <li><a href="https://github.com/dsurgeons/BiopsEE/wiki" target="_blank">BiopsEE</a></li>
+                <li><a href="https://github.com/Surge-ee/Surge-E-O/wiki" target="_blank">Surge-EO</a></li>
               </ul>
             </div>
           </li>
-          <li>|</li>
-          <li><a href="#" onclick="return false;">Support</a>
+          <li><span>Support</span>
             <div class="dropdown">
               <ul>
-                <li><a href="https://github.com/dsurgeons/SurgerEE/issues">SurgerEE</a></li>
-                <li><a href="https://github.com/Surge-ee/Surge-E-O/issues">Surge-EO</a></li>
+                <li><a href="https://github.com/dsurgeons/SurgerEE/issues" target="_blank">SurgerEE</a></li>
+                <li><a href="http://devot-ee.com/add-ons/support/biopsee/viewforum/2205" target="_blank">BiopsEE</a></li>
+                <li><a href="https://github.com/Surge-ee/Surge-E-O/issues" target="_blank">Surge-EO</a></li>
               </ul>
             </div>
           </li>
@@ -84,59 +84,52 @@
 
     <!-- branding -->
     <section class="row">
-      <div class="four columns push_six" id="logo">
+      <div class="six columns centered" id="logo">
         <h1><a href="/" class="ir" title="Professional ExpressionEngine Add-ons">Surge-EE</a></h1>
       </div>
     </section>
 
     <!-- panels -->
     <section class="row">
-      <div class="sixteen columns" id="tagline">
-        <h2>We make things to help designers and developers build ExpressionEngine sites faster.</h2>
-      </div>
-      <div class="four columns push_two panel" id="surgeree">
-        <dl>
-          <dt>
-            <figure>
-              <a href="https://github.com/dsurgeons/SurgerEE" title="SurgerEE ExpressionEngine add-on">SurgerEE</a>
-            </figure>
-          </dt>
-          <dd>
+      <article class="row">
+        <h2 id="tagline">We make things to help designers and developers build ExpressionEngine sites faster.</h2>
+        <ul class="panels">
+          <li class="panel" id="surgeree">
+            <div><figure>
+              <a href="http://devot-ee.com/add-ons/surgeree" target="_blank" title="SurgerEE ExpressionEngine add-on">SurgerEE</a>
+              <div></div>
+            </figure></div>
             <p>Ever want to use php in your templates because of some glaringly missing functionality? SurgerEE is an ongoing collection of tags filling that gap and aiding with your template surgery.</p>
-          </dd>
-        </dl>
-      </div>
-      <div class="four columns panel" id="surgeo">
-        <dl>
-          <dt>
-            <figure>
+          </li>
+          <li class="panel" id="biopsee">
+            <div><figure>
+              <a href="http://devot-ee.com/add-ons/biopsee" target="_blank" title="BiopsEE ExpressionEngine add-on">BiopsEE</a>
+              <div></div>
+            </figure></div>
+            <p>Take a look at each and every step of EE template parsing with syntax highlighting and diffs. Find performance issues and parse order bugs with ease and save hours of time and frustration.</p>
+          </li>
+          <li class="panel" id="surgeo">
+            <div><figure>
               <a href="https://github.com/Surge-ee/Surge-E-O" title="SurgeEO ExpressionEngine SEO module">SurgeEO</a>
-            </figure>
-          </dt>
-          <dd>
-            <p>SurgeEO is our answer to a need for turn-key SEO contro. Put your SEO in motion in a few clicks. SurgeEO lets you manage your SEO meta data within just<br />a few clicks.</p>
-          </dd>
-        </dl>
-      </div>
-      <div class="four columns panel" id="nextgen">
-        <dl>
-          <dt>
-            <figure>
-
+              <div></div>
+            </figure></div>
+            <p>SurgeEO is our answer to a need for turn-key page level head data. Our module lets you manage your meta data within the control panel easily without needing to hard-code content into your templates.</p>
+          </li>
+<!--           <li class="panel" id="nextgen">
+            <div><figure>
               <a href="#" onclick="return false;">&lt;Coming&gt;</a>
-            </figure>
-          </dt>
-          <dd>
+              <div></div>
+            </figure></div>
             <p>What’s next? We either know and aren’t telling or, are waiting for someone like you to tell us.</p>
-          </dd>
-        </dl>
-      </div>
+          </li> -->
+        </ul>
+      </article>
     </section>
 
     <section class="row">
       <div class="twelve columns push_two" id="get_in_touch">
         <hr />
-        <p>Looking for a Custom Add-on you have in mind? <em>Get in touch.</em></p>
+        <h3>Looking for a Custom Add-on you have in mind? <em>Get in touch.</em></h3>
         <p><a href="https://twitter.com/surgeEEapps" class="twitter-follow-button" data-show-count="false">Follow @surgeEEapps</a></p>
       </div>
     </section>
@@ -145,16 +138,14 @@
 
   <div class="container" id="footer">
     <footer class="row">
-      <div class="five columns" id="nav_sm">
-        <ul class="nav clearfix">
+      <div class="eight columns" id="nav_sm">
+<!--         <ul class="nav clearfix">
           <li><a href="#">About Us</a></li>
-          <li>|</li>
           <li><a href="#">Documentation</a></li>
-          <li>|</li>
           <li><a href="#">Support</a></li>
-        </ul>
+        </ul> -->
       </div>
-      <div class="five columns push_six" id="logo_sm">
+      <div class="eight columns" id="logo_sm">
         <p><img src="img/img_logo_sm.png" alt="Surge-ee EE apps" /></p>
         <p>Copyright 2012. Surge:EE all rights reserved.</p>
       </div>
