@@ -1,16 +1,12 @@
 <!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9" lang="en" itemscope itemtype="http://schema.org/Product"> <![endif]-->
-<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
 
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-       More info: h5bp.com/b/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>Surge-EE : ExpressionEngine add-ons</title>
@@ -18,7 +14,7 @@
   <meta name="keywords" content="expressionengine, ee add-on, add-on, third party, expressionengine third party" />
   <meta name="author" content="humans.txt">
 
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
   <!--Facebook Metadata /-->
   <meta property="fb:page_id" content="" />
@@ -34,21 +30,8 @@
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width">
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
-  <!-- CSS: implied media=all -->
-  <!-- CSS concatenated and minified via ant build script-->
-  <!-- <link rel="stylesheet" href="css/minified.css"> -->
-
-  <!-- CSS imports non-minified for staging, minify before moving to production-->
   <link rel="stylesheet" href="css/imports.css">
-  <!-- end CSS-->
 
-  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
-
-  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
-       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
-       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
@@ -64,8 +47,8 @@
             <div class="dropdown">
               <ul>
                 <li><a href="https://github.com/dsurgeons/SurgerEE/wiki" target="_blank">SurgerEE</a></li>
-                <li><a href="https://github.com/dsurgeons/BiopsEE/wiki" target="_blank">BiopsEE</a></li>
-                <li><a href="https://github.com/Surge-ee/Surge-E-O/wiki" target="_blank">Surge-EO</a></li>
+                <li><a href="https://github.com/Surge-ee/BiopsEE/wiki" target="_blank">BiopsEE</a></li>
+                <li><a href="https://github.com/Surge-ee/SurgeEO/" target="_blank">SurgeEO</a></li>
               </ul>
             </div>
           </li>
@@ -74,7 +57,7 @@
               <ul>
                 <li><a href="https://github.com/dsurgeons/SurgerEE/issues" target="_blank">SurgerEE</a></li>
                 <li><a href="http://devot-ee.com/add-ons/support/biopsee/viewforum/2205" target="_blank">BiopsEE</a></li>
-                <li><a href="https://github.com/Surge-ee/Surge-E-O/issues" target="_blank">Surge-EO</a></li>
+                <li><a href="https://github.com/Surge-ee/SurgeEO/issues" target="_blank">SurgeEO</a></li>
               </ul>
             </div>
           </li>
@@ -110,7 +93,7 @@
           </li>
           <li class="panel" id="surgeo">
             <div><figure>
-              <a href="https://github.com/Surge-ee/Surge-E-O" title="SurgeEO ExpressionEngine SEO module">SurgeEO</a>
+              <a href="https://github.com/Surge-ee/SurgeEO" title="SurgeEO ExpressionEngine SEO module">SurgeEO</a>
               <div></div>
             </figure></div>
             <p>SurgeEO is our answer to a need for turn-key page level head data. Our module lets you manage your meta data within the control panel easily without needing to hard-code content into your templates.</p>
@@ -147,7 +130,7 @@
       </div>
       <div class="eight columns" id="logo_sm">
         <p><img src="img/img_logo_sm.png" alt="Surge-ee EE apps" /></p>
-        <p>Copyright 2012. Surge:EE all rights reserved.</p>
+        <p>Copyright 2013. Surge:EE all rights reserved.</p>
       </div>
     </footer>
   </div>
@@ -163,13 +146,18 @@
   <script src="js/main.js"></script>
   <!-- end scripts-->
 
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  <!-- Prompt IE 6 users to install Chrome Frame. We suggest that you not support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+  ga('create', 'UA-39634992-1');
+  ga('send', 'pageview');
+
+  </script>
+  <!-- End Google Analytics -->
 
   <!-- Social Widget Rendering Javascript /-->
   <script src="http://platform.twitter.com/widgets.js"></script>
