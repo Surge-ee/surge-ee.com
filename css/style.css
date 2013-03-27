@@ -84,11 +84,22 @@ hr {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
-	background: url(../img/panel_surgeeo.jpg);
 	background-size: cover;
 	border-radius: 50%;
 	margin-bottom: 20px;
     behavior: url(PIE.htc);
+}
+
+#surgeree.panel figure {
+    background-image: url('../img/panel_surgeree.jpg');
+}
+
+#biopsee.panel figure {
+    background-image: url('../img/panel_biopsee.jpg');
+}
+
+#surgeeo.panel figure {
+    background-image: url('../img/panel_surgeeo.jpg');
 }
 
 .panel figure div {
